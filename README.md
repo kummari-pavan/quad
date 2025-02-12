@@ -1,15 +1,23 @@
-# quad
-quad stands for quick-api-debugger .Chrome Extension that helps developers debug APIs quickly by displaying real-time API responses in a popup while browsing websites.
+@@ -0,0 +1,82 @@
+# Quick API Debugger (QUAD)
 
-🔥 Extension Name: "Quick API Debugger"
-💡 Key Features:
-✅ Auto-detect API calls from websites using fetch and XMLHttpRequest
-✅ Show real-time responses in a popup
-✅ Filter by status codes (200, 400, 500, etc.)
-✅ Copy JSON response easily
-✅ Dark mode UI for better visibility
+QUAD (Quick API Debugger) is a Chrome Extension that helps developers debug APIs quickly by displaying real-time API responses in a popup while browsing websites.
 
-📂 Folder Structure
+## Overview
+
+Quick API Debugger is designed to streamline API debugging by providing real-time response monitoring without the need to open Chrome DevTools.
+
+### Key Features
+
+* Real-time API response monitoring through a convenient popup interface
+* Automatic detection of API calls using both fetch and XMLHttpRequest
+* Response filtering by HTTP status codes (200, 400, 500, etc.)
+* One-click JSON response copying functionality
+* Dark mode UI for enhanced visibility during extended debugging sessions
+
+## Project Structure
+
+```
 quick-api-debugger/
 │── manifest.json
 │── popup.html
@@ -18,46 +26,58 @@ quick-api-debugger/
 │── content.js
 │── styles.css
 │── icon.png
+```
 
-🚀 Use Case of "Quick API Debugger" Chrome Extension
-This extension is super useful for developers who frequently work with APIs while debugging websites. Here’s how it helps:
+## Use Cases
 
-✅ Why Developers Need It?
-Real-Time API Monitoring
+### Developer Benefits
 
-Instantly see all API calls made by a webpage without opening DevTools.
-No need to inspect the Network tab manually.
-Quickly Copy API Responses
+* **Real-Time API Monitoring**
+  * View all webpage API calls instantly without opening DevTools
+  * Eliminate the need for manual Network tab inspection
 
-Extract JSON responses directly from the extension.
-Saves time when debugging or sending requests to teammates.
-Filter API Responses Easily
+* **Efficient Response Management**
+  * Extract JSON responses directly from the extension interface
+  * Streamline debugging and team communication processes
 
-Can be modified later to filter responses by:
-Status codes (200, 400, 500)
-Specific endpoints (e.g., only /users API calls)
-Works for Both fetch() and XMLHttpRequest APIs
+* **Advanced Filtering Capabilities**
+  * Filter responses by status codes (200, 400, 500)
+  * Target specific endpoints (e.g., /users API calls)
 
-Unlike other extensions, this one tracks both modern and legacy API requests.
-No Extra Logging Code Needed
+* **Comprehensive API Coverage**
+  * Support for both modern fetch() and legacy XMLHttpRequest APIs
+  * Automatic capture of API responses without code modification
 
-Normally, developers add console.log(response) inside their code.
-With this extension, you don’t need to modify any code—it automatically captures API responses.
-🏆 Who Can Use It?
-Frontend Developers 🧑‍💻 → Debug API responses when integrating backend data
-Backend Developers 🏗️ → Check how APIs are being used in real-time
-QA Testers 🛠️ → Validate API responses without extra tools
-Tech Enthusiasts 🚀 → Learn how API requests work on different websites
-🔥 Example Scenario:
-💡 Suppose you're working on an e-commerce site. You want to see real-time API responses for:
-✔️ Product details API (/api/products/123)
-✔️ User login API (/api/auth/login)
-✔️ Cart updates (/api/cart/add)
+## Target Users
 
-👉 Instead of opening Chrome DevTools → Network Tab → JSON Preview,
-👉 Just click on the extension icon, and you’ll see the API response instantly!
+* **Frontend Developers**: Debug API integrations with backend services
+* **Backend Developers**: Monitor real-time API usage patterns
+* **QA Testers**: Validate API responses without additional tooling
+* **Tech Enthusiasts**: Learn API behavior across different websites
 
-🌟 Future Enhancements
-🔹 Search & Filter APIs
-🔹 Export API Logs as JSON
-🔹 Edit & Resend API Requests 
+## Practical Example
+
+Consider an e-commerce platform scenario where you need to monitor multiple API endpoints:
+
+* Product details (`/api/products/123`)
+* User authentication (`/api/auth/login`)
+* Shopping cart operations (`/api/cart/add`)
+
+Instead of navigating through Chrome DevTools' Network tab and JSON Preview, simply click the extension icon for immediate API response visibility.
+
+## Roadmap
+
+Future enhancements planned for the extension include:
+
+* Advanced search and filtering capabilities for API calls
+* JSON export functionality for API logs
+* API request modification and resend features
+
+## Usage Instructions
+
+1. Install the extension from the Chrome Web Store
+2. Navigate to your target website
+3. Click the QUAD icon in your browser toolbar
+4. View real-time API responses in the popup window
+5. Use the built-in filters to focus on specific response types
+6. Copy JSON responses as needed for debugging or documentation
